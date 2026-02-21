@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music & Health | UCI Informatics Group 3</title>
+    <link rel="stylesheet" href="landing-style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <div class="nav-logo">Group 3</div>
+            <ul class="nav-links">
+                <li><a href="#about">The Study</a></li>
+                <li><a href="#participate">Participate</a></li>
+                <li><a href="#methodology">Methodology</a></li>
+                <li><a href="#preliminary-data">Results</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="header-title-flex">
+                <div class="header-text">
+                    <h1>Music & Health Research</h1>
+                    <p class="subtitle">Exploring Auditory Environments & Cognitive Performance</p>
+                </div>
+                <div class="header-logo-container">
+                    <img src="logoMusics.png" alt="Music and Health Logo" class="header-logo">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="study-stats">
+        <div class="container stats-flex">
+            <div class="stat-item"><strong>Status</strong><span>In Progress</span></div>
+            <div class="stat-item"><strong>Target Population</strong><span>College students</span></div>
+            <div class="stat-item"><strong>Course</strong><span>IN4MATX148 | PUBHEALTH106</span></div>
+        </div>
+    </section>
+
+    <main class="container">
+        
+        <section id="about">
+            <h2>The Study</h2>
+            <p class="lead-text">
+                As part of a joint <strong>Public Health and Informatics</strong> initiative at UC Irvine, 
+                we are investigating the intersection of digital media and focus, particularly in relation to college students.
+            </p>
+
+            <div class="research-grid">
+                <div class="research-content">
+                    <h3>Background and Significance</h3>
+                    <p>
+                        College students are often taught the idea that with classes comes studying; focus is very important in retaining memory for the best academic performance. However, due to the present digital age, constant exposure to online applications has thinned attention spans and has become fragile.
+                    </p>
+                    <p>
+                        With the rise of tools such as AI, short-form content media, and the simplification of educational texts, student engagement is declining. This research explores the relationship between mental stimulation and attention, helping students develop healthier habits.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <section id="participate" class="cta-grid">
+            <div class="cta-card">
+                <h3>1. Baseline Survey</h3>
+                <p>Provide information about your musical background and habits.</p>
+                <a href="https://forms.gle/nxiiKmn8cCppgc4t5" target="_blank" class="btn secondary">Pre-Study Survey</a>
+            </div>
+            
+            <div class="cta-card highlight">
+                <h3>2. The Experiment</h3>
+                <p>Listen to music and complete the Schulte Grid focus task.</p>
+                <a href="https://lanajwang13.github.io/Inf172/" target="_blank" class="btn primary">Launch Experiment</a>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <section id="methodology">
+            <h2>Research Methodology</h2>
+            
+            <div class="method-phase">
+                <h3>Phase I: Preliminary Population Survey</h3>
+                <p>
+                    To establish a baseline for contemporary student habits, we conducted an initial cross-sectional survey that garnered over 50 responses. 
+                    This data allowed us to determine the specific musical genres utilized in the experimental phase.
+                </p>
+            </div>
+
+            <div class="method-phase">
+                <h3>Phase II: Experimental Design & Protocol</h3>
+                <p>We developed a custom-coded testing environment to ensure standardized data collection. To accompany the testing environment,
+                    we also developed an interview protocol to ensure a consistent testing experience. The experiment consists of six distinct trials designed to measure focus amidst various auditory environments.</p>
+
+                <div class="schulte-explanation-flex">
+                    <div class="schulte-text">
+                        <p><strong>The Schulte Grid Task:</strong> Participants are presented with a 7x7 grid of randomized numbers. They are asked to locate and select numbers 1 through 49 in ascending order as quickly and accurately as possible. This task is widely used to measure mental speed, visual search efficiency, and sustained attention.</p>
+                        <ul class="genre-list">
+                            <li><strong>Control:</strong> Silence</li>
+                            <li><strong>Pop:</strong> High Popularity</li>
+                            <li><strong>Country:</strong> Low Popularity</li>
+                            <li><strong>EDM:</strong> Median Popularity</li>
+                            <li><strong>Classical:</strong> Historical Benchmark</li>
+                            <li><strong>Preferred:</strong> Participant Choice</li>
+                        </ul>
+                    </div>
+                    <div class="schulte-image-container">
+                        <img src="SchulteTablepic.png" alt="Example of a 7x7 Schulte Grid" class="schulte-pic">
+                        <span class="caption">Testing Tool: 7x7 Randomized Schulte Grid</span>
+                    </div>
+                </div>
+
+                <div class="interface-text">
+                    <h4>Digital Testing Suite</h4>
+                    <p>Our custom web-based application automates the transition between auditory environments. By integrating audio controls into the testing logic, we eliminate manual timing errors and ensure stimuli begin precisely at the start of each trial.</p>
+                    
+                    <div class="tech-stack-row">
+                        <span class="tech-tag">HTML5/CSS3</span>
+                        <span class="tech-tag">JavaScript Logic</span>
+                        <span class="tech-tag">GitHub Pages Deployment</span>
+                        <span class="tech-tag">Automated Data Logging</span>
+                    </div>
+
+                    <div class="interface-action">
+                        <p>Experience the automation firsthand:</p>
+                        <a href="https://lanajwang13.github.io/Inf172/" target="_blank" class="interface-link">
+                            Launch Live Interface <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="method-phase">
+                <h3>Phase III: Data Collection & Metrics</h3>
+                <p>For each of the six rounds, we captured three primary data points to analyze cognitive load and performance:</p>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <strong>Quantitative Performance</strong>
+                        <span>Completion time in seconds</span>
+                    </div>
+                    <div class="metric-card">
+                        <strong>Subjective Complexity</strong>
+                        <span>Difficulty rated on a 5-point scale</span>
+                    </div>
+                    <div class="metric-card">
+                        <strong>Auditory Familiarity</strong>
+                        <span>Song recognition rated on a 1-5 scale</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <section id="preliminary-data">
+            <div class="container">
+                <h2>Initial Survey Insights</h2>
+                <p class="lead-text">Before the experiment, we surveyed 54 college students to understand their auditory study habits.</p>
+                
+                <div class="graph-grid">
+                    <div class="graph-card">
+                        <img src="172SruveyFocus1.svg" alt="Average Focus Sessions">
+                        <div class="graph-info">
+                            <h4>Focus Habits</h4>
+                            <p>A majority of students, 70.3%, report only being able to focus for less than 1 hour before needing a break. Less than 3% can focus for 2+ consecutive hours.</p>
+                        </div>
+                    </div>
+
+                    <div class="graph-card">
+                        <img src="172SruveyGenres1.svg" alt="Popular Study Genres">
+                        <div class="graph-info">
+                            <h4>Popular Genres</h4>
+                            <p>Pop is the most popular (63.3%), followed closely by R&B and Indie. Genres such as Non-English music and Country are the least popular (2% and 8.2%).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="analysis-status">
+       
+       
+            <div class="container">
+            <div class="status-card">
+                <div class="pulse-container">
+                    <div class="pulse-dot"></div>
+                    <span class="status-tag">Current Phase</span>
+                </div>
+                <h3>Analysis in Progress...</h3>
+                <p>Our team is currently processing the experimental data from Phase II. Please check back soon!</p>
+                
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill"></div>
+                </div>
+                <span class="progress-label">Data Processing: 60% Complete</span>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <section class="final-cta">
+        <div class="container">
+            <h3>Ready to contribute to our research?</h3>
+            <p>Your participation helps us better understand the impact of music on student focus. Start the testing suite below.</p>
+            <a href="https://lanajwang13.github.io/Inf172/" target="_blank" class="btn primary">Start the Experiment</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Music & Health Research Project | UCI Informatics & Public Health Group 3</p>
+    </footer>
+
+</body>
+</html>

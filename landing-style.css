@@ -1,0 +1,287 @@
+/* --- GROUP 3: MODERN TECH-RESEARCH DESIGN SYSTEM (PURPLE) --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --deep-navy: #0f172a;      
+    --slate-navy: #1e293b;     
+    --spotify-green: #1db954;  
+    --forest-green: #15803d;   
+    --cool-gray: #f8fafc;      
+    --white: #ffffff;          
+    --purple-main: #6366f1;    
+    --purple-light: #eef2ff;   
+    --slate-gray: #64748b;     
+    --glass: rgba(255, 255, 255, 0.9);
+}
+
+/* --- GLOBAL STYLES --- */
+html { scroll-behavior: smooth; }
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    color: var(--deep-navy);
+    background-color: var(--white);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+
+/* --- LONG SECTION DIVIDER --- */
+.section-divider {
+    display: block;
+    width: 320px;
+    height: 2px;            
+    background: var(--purple-main); 
+    margin: 60px auto;      
+    border-radius: 50px;
+    border: none;
+    opacity: 0.25;           
+}
+
+/* --- GLASS NAVBAR --- */
+.navbar {
+    background-color: var(--glass);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--purple-light);
+    padding: 1.2rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-flex { display: flex; justify-content: space-between; align-items: center; }
+.nav-logo { font-weight: 800; color: var(--deep-navy); font-size: 1.2rem; }
+.nav-links { list-style: none; display: flex; gap: 30px; margin: 0; padding: 0; }
+.nav-links a { text-decoration: none; color: var(--slate-gray); font-size: 0.85rem; font-weight: 600; transition: 0.2s; }
+.nav-links a:hover { color: var(--spotify-green); }
+
+/* --- HERO HEADER --- */
+header { padding: 100px 0 60px; }
+.header-title-flex { display: flex; justify-content: space-between; align-items: center; gap: 40px; }
+header h1 { font-size: 3.2rem; font-weight: 800; color: var(--deep-navy); letter-spacing: -2px; margin: 0 0 20px 0; }
+.subtitle { font-size: 1.25rem; color: var(--slate-navy); border-left: 4px solid var(--spotify-green); padding-left: 20px; }
+.header-logo { width: 450px; height: auto; animation: float 6s ease-in-out infinite; filter: drop-shadow(0 20px 30px rgba(0,0,0,0.1)); }
+@keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-12px); } }
+
+/* --- STATS BAR --- */
+.study-stats { background: var(--purple-light); padding: 30px 0; border-top: 1px solid rgba(0,0,0,0.05); border-bottom: 1px solid rgba(0,0,0,0.05); }
+.stats-flex { display: flex; justify-content: space-between; }
+.stat-item strong { display: block; font-size: 0.7rem; color: var(--purple-main); text-transform: uppercase; margin-bottom: 4px; }
+.stat-item span { color: var(--deep-navy); font-weight: 700; font-size: 1.1rem; }
+
+/* --- METHODOLOGY --- */
+.method-phase { margin-bottom: 60px; border-left: 2px solid var(--purple-light); padding-left: 30px; }
+.genre-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding: 0; list-style: none; margin: 40px 0; }
+.genre-list li { padding: 12px 0; border-bottom: 2px solid var(--purple-light); font-weight: 600; text-align: center; transition: 0.3s; }
+.genre-list li:hover { border-bottom-color: var(--spotify-green); transform: translateY(-4px); }
+
+.metrics-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+.metric-card { border-left: 3px solid var(--spotify-green); padding-left: 20px; transition: 0.3s; }
+.metric-card:hover { background: var(--purple-light); transform: translateX(5px); }
+.metric-card strong { color: var(--spotify-green); display: block; font-size: 0.8rem; text-transform: uppercase; }
+
+/* --- SCHULTE SECTION (STABILIZED) --- */
+.schulte-explanation-flex { display: flex; gap: 40px; align-items: center; margin: 40px 0; }
+.schulte-text { flex: 1.2; }
+.schulte-image-container { flex: 1; text-align: center; }
+.schulte-pic { width: 100%; max-width: 380px; border-radius: 12px; border: 1px solid var(--purple-light); box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition: 0.3s; }
+.schulte-pic:hover { transform: scale(1.05); }
+.caption { margin-top: 15px; font-size: 0.8rem; font-weight: 600; color: var(--purple-main); text-transform: uppercase; }
+
+/* --- DIGITAL TESTING SUITE (REFINED SHOWCASE) --- */
+.interface-showcase { 
+    margin-top: 50px; 
+    padding: 40px; 
+    background: var(--purple-light); 
+    border-radius: 24px; 
+    border: 1px solid rgba(99, 102, 241, 0.1);
+}
+.interface-text h4 { 
+    color: var(--purple-main) !important; 
+    text-transform: uppercase; 
+    letter-spacing: 1.5px; 
+    font-size: 0.9rem; 
+    margin-bottom: 15px; 
+    font-weight: 800;
+}
+.interface-text p { color: var(--slate-navy) !important; margin-bottom: 20px; }
+
+.tech-stack-row { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 30px; }
+.tech-tag { background: var(--white); padding: 6px 16px; border-radius: 100px; font-size: 0.8rem; font-weight: 700; border: 1px solid var(--purple-light); transition: 0.2s; }
+.tech-tag:hover { border-color: var(--spotify-green); color: var(--forest-green); transform: translateY(-2px); }
+
+.interface-action { margin-top: 30px; padding-top: 25px; border-top: 1px solid rgba(0,0,0,0.05); }
+.interface-action p { font-size: 0.85rem !important; font-weight: 800 !important; color: var(--slate-gray) !important; text-transform: uppercase; margin-bottom: 10px !important; }
+.interface-link { display: inline-flex; align-items: center; text-decoration: none; color: var(--purple-main); font-weight: 800; font-size: 1.1rem; transition: 0.3s; }
+.interface-link:hover { color: var(--spotify-green); }
+.interface-link span { margin-left: 8px; transition: 0.3s; }
+.interface-link:hover span { transform: translateX(8px); }
+
+/* --- CARDS & GRAPHS --- */
+.cta-grid, .graph-grid { display: flex; gap: 24px; }
+.cta-card, .graph-card { flex: 1; padding: 40px; background: var(--white); border: 1px solid var(--purple-light); border-radius: 20px; transition: 0.3s; }
+.cta-card:hover, .graph-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
+.cta-card.highlight { background: var(--deep-navy); color: var(--white); border: none; }
+.graph-card img { width: 100%; border-radius: 12px; margin-bottom: 20px; border: 1px solid var(--cool-gray); }
+
+.btn { display: inline-block; padding: 14px 28px; border-radius: 12px; font-weight: 700; text-decoration: none; transition: 0.2s; }
+.btn.primary { background: var(--spotify-green); color: var(--white); }
+.btn.secondary { background: var(--purple-light); color: var(--purple-main); }
+
+/* --- FINAL CTA BLOCK --- */
+.final-cta { background: var(--deep-navy); color: var(--white); text-align: center; padding: 80px 0; border-radius: 40px 40px 0 0; }
+.final-cta h3 { color: var(--white); font-size: 2.25rem; margin-bottom: 15px; }
+.final-cta p { margin-bottom: 30px; opacity: 0.8; }
+
+/* --- FOOTER --- */
+footer { padding: 60px 0; border-top: 1px solid var(--cool-gray); text-align: center; color: var(--slate-gray); font-size: 0.85rem; }
+
+/* --- MOBILE --- */
+@media (max-width: 850px) {
+    header h1 { white-space: normal; font-size: 2.2rem; }
+    .header-title-flex, .genre-list, .cta-grid, .graph-grid, .schulte-explanation-flex { flex-direction: column; }
+    .genre-list { grid-template-columns: 1fr; }
+}
+
+/* --- TEAM PAGE (FIXED IMAGE SIZES) --- */
+.team-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 60px 0;
+}
+
+.team-row {
+    display: flex;
+    align-items: center;
+    background: var(--white);
+    border-radius: 24px;
+    border: 1px solid var(--purple-light);
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+}
+
+.team-row:hover { border-color: var(--purple-main); }
+
+.member-photo {
+    flex: 0 0 240px; /* Forces the box to 240px wide */
+    height: 240px;   /* Forces the box to 240px high */
+    background: var(--cool-gray);
+}
+
+.member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crops image to fill the square without stretching */
+}
+
+.member-info { padding: 40px; }
+
+.role {
+    display: block;
+    color: var(--spotify-green);
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+}
+
+.member-info h2 { font-size: 1.75rem; margin: 0 0 12px 0; }
+
+/* --- UPDATED MOBILE FOR TEAM --- */
+@media (max-width: 850px) {
+    .team-row { flex-direction: column; text-align: center; }
+    .member-photo { width: 100%; height: 300px; flex: none; }
+}
+
+/* --- ANALYSIS STATUS SECTION --- */
+.analysis-status {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.status-card {
+    background: var(--purple-light);
+    border-radius: 24px;
+    padding: 50px 40px;
+    border: 1px solid rgba(99, 102, 241, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.pulse-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.status-tag {
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--purple-main);
+}
+
+.pulse-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--purple-main);
+    border-radius: 50%;
+    position: relative;
+}
+
+.pulse-dot::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--purple-main);
+    border-radius: 50%;
+    animation: pulse-ring 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+@keyframes pulse-ring {
+    0% { transform: scale(1); opacity: 0.8; }
+    100% { transform: scale(3.5); opacity: 0; }
+}
+
+.status-card h3 {
+    margin: 0 0 15px 0;
+    color: var(--deep-navy);
+    font-size: 1.8rem;
+}
+
+.status-card p {
+    color: var(--slate-navy);
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+/* Progress Bar */
+.progress-bar-bg {
+    width: 100%;
+    max-width: 400px;
+    height: 8px;
+    background: var(--white);
+    border-radius: 10px;
+    margin: 0 auto 10px auto;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    width: 60%; /* Adjust this percentage as you go */
+    height: 100%;
+    background: linear-gradient(90deg, var(--purple-main), var(--spotify-green));
+    border-radius: 10px;
+}
+
+.progress-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--slate-gray);
+}
