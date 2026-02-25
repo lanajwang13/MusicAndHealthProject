@@ -237,3 +237,18 @@ footer { padding: 60px 0; border-top: 1px solid var(--cool-gray); text-align: ce
     text-align: center;
     width: 100%;
 }
+
+/* Ensure the image and its caption are always stacked vertically */
+.schulte-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the image and caption horizontally */
+    text-align: center;
+}
+
+/* Optional: Ensure the caption doesn't float up too close to the image */
+.caption {
+    margin-top: 15px; 
+    display: block; /* Guarantees it takes up its own line */
+    width: 100%;
+}
