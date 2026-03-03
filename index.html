@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music & Health | UCI Informatics Group 3</title>
     <link rel="stylesheet" href="landing-style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
@@ -37,8 +38,8 @@
 
     <section class="study-stats">
         <div class="container stats-flex">
-            <div class="stat-item"><strong>Status</strong><span>In Progress</span></div>
-            <div class="stat-item"><strong>Target Population</strong><span>College students</span></div>
+            <div class="stat-item"><strong>Status</strong><span>Phase II Active</span></div>
+            <div class="stat-item"><strong>Target Population</strong><span>College Students</span></div>
             <div class="stat-item"><strong>Course</strong><span>IN4MATX148 | PUBHEALTH106</span></div>
         </div>
     </section>
@@ -67,8 +68,8 @@
         </section>
 
         <hr class="section-divider">
-        <h1>Participate</h1>
 
+        <h1>Participate</h1>
         <section id="participate" class="cta-grid">
             <div class="cta-card">
                 <h3>1. Baseline Survey</h3>
@@ -84,26 +85,23 @@
         </section>
 
         <hr class="section-divider">
+
         <h1>Methodology</h1>
         <section id="methodology">
             <h2>Research Protocol</h2>
             
             <div class="method-phase">
                 <h3>Phase I: Preliminary Population Survey</h3>
-                <p>
-                    To establish a baseline for contemporary student habits, we conducted an initial cross-sectional survey that garnered over 50 responses. 
-                    This data allowed us to determine the specific musical genres utilized in the experimental phase.
-                </p>
+                <p>To establish a baseline for contemporary student habits, we conducted an initial cross-sectional survey that garnered over 50 responses. This data allowed us to determine the specific musical genres utilized in the experimental phase.</p>
             </div>
 
             <div class="method-phase">
                 <h3>Phase II: Experimental Design & Protocol</h3>
-                <p>We developed a custom-coded testing environment to ensure standardized data collection. To accompany the testing environment,
-                    we also developed an interview protocol to ensure a consistent testing experience. The experiment consists of six distinct trials designed to measure focus amidst various auditory environments.</p>
+                <p>We developed a custom-coded testing environment to ensure standardized data collection. The experiment consists of six distinct trials designed to measure focus amidst various auditory environments.</p>
 
                 <div class="schulte-explanation-flex">
                     <div class="schulte-text">
-                        <p><strong>The Schulte Grid Task:</strong> Participants are presented with a 7x7 grid of randomized numbers. They are asked to locate and select numbers 1 through 49 in ascending order as quickly and accurately as possible. This task is widely used to measure mental speed, visual search efficiency, and sustained attention.</p>
+                        <p><strong>The Schulte Grid Task:</strong> Participants are presented with a 7x7 grid of randomized numbers. They are asked to locate numbers 1 through 49 in ascending order as quickly as possible. This task measures mental speed and visual search efficiency.</p>
                         <ul class="genre-list">
                             <li><strong>Control:</strong> Silence</li>
                             <li><strong>Pop:</strong> High Popularity</li>
@@ -114,34 +112,15 @@
                         </ul>
                     </div>
                     <div class="schulte-image-container">
-                        <img src="SchulteTablepic.png" alt="Example of a 7x7 Schulte Grid" class="schulte-pic">
+                        <img src="SchulteTablepic.png" alt="7x7 Schulte Grid" class="schulte-pic">
                         <span class="caption">Testing Tool: 7x7 Randomized Schulte Grid</span>
-                    </div>
-                </div>
-
-                <div class="interface-text">
-                    <h4>Digital Testing Suite</h4>
-                    <p>Our custom web-based application automates the transition between auditory environments. By integrating audio controls into the testing logic, we eliminate manual timing errors and ensure stimuli begin precisely at the start of each trial.</p>
-                    
-                    <div class="tech-stack-row">
-                        <span class="tech-tag">HTML5/CSS3</span>
-                        <span class="tech-tag">JavaScript Logic</span>
-                        <span class="tech-tag">GitHub Pages Deployment</span>
-                        <span class="tech-tag">Automated Data Logging</span>
-                    </div>
-
-                    <div class="interface-action">
-                        <p>Experience the automation firsthand:</p>
-                        <a href="https://lanajwang13.github.io/Inf172/" target="_blank" class="interface-link">
-                            Launch Live Interface <span class="arrow">→</span>
-                        </a>
                     </div>
                 </div>
             </div>
 
             <div class="method-phase">
                 <h3>Phase III: Data Collection & Metrics</h3>
-                <p>For each of the six rounds, we captured three primary data points to analyze cognitive load and performance:</p>
+                <p>For each round, we captured three primary data points to analyze cognitive load and performance:</p>
                 <div class="metrics-grid">
                     <div class="metric-card">
                         <strong>Quantitative Performance</strong>
@@ -160,6 +139,7 @@
         </section>
 
         <hr class="section-divider">
+
         <h1>Insights</h1>
         <section id="preliminary-data">
             <div class="container">
@@ -168,10 +148,10 @@
                 
                 <div class="graph-grid">
                     <div class="graph-card">
-                        <img src="172SruveyFocus1.svg" alt="Average Focus Sessions">
+                        <img src="172SruveyFocus1.svg" alt="Focus Habits">
                         <div class="graph-info">
                             <h4>Focus Habits</h4>
-                            <p>A majority of students, 70.3%, report only being able to focus for less than 1 hour before needing a break. Less than 3% can focus for 2+ consecutive hours.</p>
+                            <p>A majority of students, 70.3%, report only being able to focus for less than 1 hour before needing a break.</p>
                         </div>
                     </div>
 
@@ -179,7 +159,7 @@
                         <img src="172SruveyGenres1.svg" alt="Popular Study Genres">
                         <div class="graph-info">
                             <h4>Popular Genres</h4>
-                            <p>Pop is the most popular (63.3%), followed closely by R&B and Indie. Genres such as Non-English music and Country are the least popular (2% and 8.2%).</p>
+                            <p>Pop is the most popular (63.3%), followed closely by R&B and Indie. Country is the least popular (8.2%).</p>
                         </div>
                     </div>
 
@@ -187,10 +167,7 @@
                         <img src="PreSurvey3.png" alt="Average Study Session Duration">
                         <div class="graph-info">
                             <h4>Session Endurance</h4>
-                            <p>
-                                When studying with music, a significant 74% of students report their sessions typically last 2-3 hours. 
-                                Only 8% of students maintain focus for 4-5 hours, highlighting a common window for peak sustained attention.
-                            </p>
+                            <p>When studying with music, a significant 74% of students report their sessions typically last 2-3 hours.</p>
                         </div>
                     </div>
 
@@ -198,101 +175,192 @@
                         <img src="PreSurvey4.png" alt="Perceived Impact of Music on Focus">
                         <div class="graph-info">
                             <h4>Perceived Focus Impact</h4>
-                            <p>
-                                Most students surveyed believe there is a direct relationship between music and focus; 56% report that music improves their concentration in some capacity, while 34% acknowledge it can be a source of distraction.
-                            </p>
+                            <p>56% of students report that music improves concentration, while 34% acknowledge it can be a source of distraction.</p>
                         </div>
                     </div>
 
                     <div class="graph-card">
-                        <img src="PreSurvey5.png" alt="Genres working differently for specific tasks">
+                        <img src="PreSurvey5.png" alt="Genre-Task Specificity">
                         <div class="graph-info">
                             <h4>Genre-Task Specificity</h4>
-                            <p>
-                                While 34% of students have explicitly noticed that different genres work 
-                                better for specific tasks, a larger portion (38%) remains unsure. 
-                                This uncertainty underscores the potential for our experimental phase to provide clarity.
-                            </p>
+                            <p>34% of students notice different genres work better for specific tasks, while a larger portion (38%) remains unsure.</p>
                         </div>
                     </div>
 
                     <div class="graph-card">
-                        <img src="PreSurvey6.png" alt="Study tasks benefiting most from music">
+                        <img src="PreSurvey6.png" alt="Task-Specific Benefits">
                         <div class="graph-info">
                             <h4>Task-Specific Benefits</h4>
-                            <p>
-                                Music is most heavily utilized for creative work (82%) and problem-solving (68%). Conversely, only 12% of students find it beneficial for reading, suggesting music is better suited for non-verbal tasks.
-                            </p>
+                            <p>Music is most heavily utilized for creative work (82%) and problem-solving (68%), but less so for reading (12%).</p>
                         </div>
                     </div>
-
                 </div>
-            </div>
 
                 <div class="experiment-insights">
-                <h2>Experimental Insights</h2>
-                <p class="lead-text">
-                    After conducting over 20 one-on-one <strong>controlled trials</strong>, our team analyzed 
-                    the performance data across six distinct auditory environments.
-                </p>
+                    <hr class="section-divider">
+                    <h2>Experimental Insights</h2>
+                    <p class="lead-text">After conducting over 20 controlled trials, our team analyzed performance across six environments.</p>
 
-                <div class="graph-grid">
-                    <div class="graph-card">
-                        <div class="graph-info">
-                            <h4>The "Flow State" Genre</h4>
-                            <p>
-                                <strong>EDM (Electronic Dance Music)</strong> emerged as the most effective focus aid, with participants completing tasks on average 20% faster than in silence. Notes often cited the high BPM as a tool for maintaining a steady "clicking rhythm."
-                            </p>
+                    <div class="graph-grid">
+                        <div class="graph-card">
+                            <canvas id="perfChart"></canvas>
+                            <div class="graph-info">
+                                <h4>Objective Performance Trends</h4>
+                                <p><strong>EDM</strong> and <strong>Classical</strong> emerged as the strongest performers objectively, with average times of <strong>73.6s</strong> and <strong>78.3s</strong>. These genres also received the lowest difficulty ratings.</p>
+                                <p>Unlike silence (93.2s), these environments provided a stable auditory backdrop that reduced mind-wandering and allowed for a faster flow state.</p>
+                            </div>
+                        </div>
+
+                        <div class="graph-card">
+                            <canvas id="lyricChart"></canvas>
+                            <div class="graph-info">
+                                <h4>The "Lyric Tax" & Interference</h4>
+                                <p><strong>Prominent, well-enunciated lyrics</strong> were the single biggest disruptor. Clear vocals forced participants into "mental karaoke," causing verbal interference with the task.</p>
+                                <p>While Pop is familiar, its lyrical density splits attention, explaining why it underperformed instrumental tracks in both speed and accuracy.</p>
+                            </div>
+                        </div>
+
+                        <div class="graph-card">
+                            <canvas id="tempoChart"></canvas>
+                            <div class="graph-info">
+                                <h4>The BPM Advantage & Rhythm</h4>
+                                <p><strong>Tempo</strong> is a stronger driver of performance than genre label. High-BPM tracks created a psychological "pace" matching the Schulte task, leading to a 20% speed increase.</p>
+                                <p>Faster songs provided an external "drive" anchor, while slower genres like Country (88.2s) were often described as "sluggish" for high-speed search tasks.</p>
+                            </div>
+                        </div>
+
+                        <div class="graph-card">
+                            <canvas id="diffChart"></canvas>
+                            <div class="graph-info">
+                                <h4>The Familiarity Paradox</h4>
+                                <p>Familiarity helped focus when music was beat-heavy (EDM), but became a liability when the song had singable lyrics (Pop).</p>
+                                <p>Knowing lyrics caused participants to mentally anticipate the next line rather than the next number, showing that active vocal processing is a major enemy of focus.</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="graph-card">
-                        <div class="graph-info">
-                            <h4>The Lyric Tax</h4>
-                            <p>
-                                While <strong>Pop</strong> is the most popular study genre, it resulted in the highest rate of "mis-clicks." Participants noted that catchy lyrics often pulled their attention away from the grid, forcing them to "focus harder" to compensate.
-                            </p>
+                    <div class="full-width-analysis">
+                        <hr class="section-divider">
+                        <h2>The Focus Boost: Net Productivity Gain</h2>
+                        <p class="lead-text">Normalized against the silence baseline, higher bars indicate a larger "Focus Boost."</p>
+                        <div class="big-graph-container" style="height: 500px; padding: 20px; background: white; border-radius: 20px; border: 1px solid #eef2ff;">
+                            <canvas id="productivityChart"></canvas>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        
-
         <section class="analysis-status">
-       
-       
             <div class="container">
-            <div class="status-card">
-                <div class="pulse-container">
-                    <div class="pulse-dot"></div>
-                    <span class="status-tag">Current Phase</span>
+                <div class="status-card">
+                    <div class="pulse-container">
+                        <div class="pulse-dot"></div>
+                        <span class="status-tag">Live Phase</span>
+                    </div>
+                    <h3>Analysis in Progress...</h3>
+                    <p>Processing remaining experimental data. Results are being updated in real-time!</p>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill"></div>
+                    </div>
+                    <span class="progress-label">Data Processing: 60% Complete</span>
                 </div>
-                <h3>Analysis in Progress...</h3>
-                <p>Our team is currently processing the experimental data from Phase II. Please check back soon!</p>
-                
-                <div class="progress-bar-bg">
-                    <div class="progress-bar-fill"></div>
-                </div>
-                <span class="progress-label">Data Processing: 60% Complete</span>
             </div>
-        </div>
-    </section>
-
+        </section>
     </main>
 
-    <section class="final-cta">
-        <div class="container">
-            <h3>Ready to contribute to our research?</h3>
-            <p>Your participation helps us better understand the impact of music on student focus. Start the testing suite below.</p>
-            <a href="https://lanajwang13.github.io/Inf172/" target="_blank" class="btn primary">Start the Experiment</a>
-        </div>
-    </section>
-
     <footer>
-        <p>&copy; 2026 Music & Health Research Project | UCI Informatics & Public Health Group 3</p>
+        <p>&copy; 2026 Music & Health Research Project | UCI Informatics Group 3</p>
     </footer>
 
+    <script>
+        Chart.defaults.font.family = "'Inter', sans-serif";
+        Chart.defaults.color = '#1e293b';
+
+        // 1. Performance
+        new Chart(document.getElementById('perfChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Silence', 'Pop', 'Country', 'EDM', 'Classical'],
+                datasets: [{
+                    data: [93.2, 91.8, 88.2, 73.6, 78.3],
+                    backgroundColor: ['#64748b', '#fb7185', '#fb923c', '#22c55e', '#60a5fa'],
+                    borderRadius: 5
+                }]
+            },
+            options: { 
+                responsive: true, maintainAspectRatio: false, 
+                plugins: { legend: { display: false } },
+                scales: { y: { title: { display: true, text: 'Seconds' }, beginAtZero: false, min: 60 } }
+            }
+        });
+
+        // 2. Lyric Tax
+        new Chart(document.getElementById('lyricChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Lyric Distraction', 'Focused Flow'],
+                datasets: [{
+                    data: [34, 66],
+                    backgroundColor: ['#ef4444', '#22c55e']
+                }]
+            },
+            options: { responsive: true, maintainAspectRatio: false }
+        });
+
+        // 3. BPM Improvement
+        new Chart(document.getElementById('tempoChart'), {
+            type: 'line',
+            data: {
+                labels: ['Low BPM', 'Med BPM', 'High BPM'],
+                datasets: [{
+                    data: [5, 12, 26],
+                    borderColor: '#22c55e',
+                    backgroundColor: 'rgba(34, 197, 94, 0.1)',
+                    fill: true,
+                    tension: 0.3
+                }]
+            },
+            options: { responsive: true, maintainAspectRatio: false }
+        });
+
+        // 4. Difficulty
+        new Chart(document.getElementById('diffChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Silence', 'Pop', 'Country', 'EDM', 'Classical'],
+                datasets: [{
+                    data: [2.61, 2.78, 2.50, 2.17, 2.33],
+                    backgroundColor: '#6366f1',
+                    borderRadius: 5
+                }]
+            },
+            options: { responsive: true, maintainAspectRatio: false }
+        });
+
+        // 5. Big Productivity Chart
+        new Chart(document.getElementById('productivityChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Pop', 'Country', 'Preferred', 'Classical', 'EDM (Peak)'],
+                datasets: [{
+                    label: '% Productivity Boost vs. Silence',
+                    data: [1.5, 5.7, 16.4, 19.0, 26.6], 
+                    backgroundColor: ['#fb7185', '#fb923c', '#facc15', '#60a5fa', '#22c55e'],
+                    borderRadius: 10,
+                    barThickness: 60
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: { title: { display: true, text: '% Productivity Increase' }, beginAtZero: true },
+                    x: { title: { display: true, text: 'Environment' } }
+                }
+            }
+        });
+    </script>
 </body>
 </html>

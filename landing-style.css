@@ -27,7 +27,18 @@ body {
 
 .container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
 
-/* --- LONG SECTION DIVIDER --- */
+/* --- UNIFIED SECTION BOXES (White + Border) --- */
+/* This ensures Methodology and all other sections match the Insights/Participate style */
+main section {
+    padding: 60px 40px;
+    margin: 40px 0;
+    border-radius: 40px;
+    background-color: var(--white); 
+    border: 2px solid var(--purple-light);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.02); /* Subtle depth */
+}
+
+/* --- SECTION DIVIDER --- */
 .section-divider {
     display: block;
     width: 320px;
@@ -59,70 +70,66 @@ body {
 /* --- HERO HEADER --- */
 header { padding: 100px 0 60px; }
 .header-title-flex { display: flex; justify-content: space-between; align-items: center; gap: 40px; }
-header h1 { font-size: 3.2rem; font-weight: 800; color: var(--deep-navy); letter-spacing: -2px; margin: 0 0 20px 0; }
+
+header h1 { 
+    font-size: 3.2rem; 
+    font-weight: 800; 
+    letter-spacing: -2px; 
+    margin: 0 0 20px 0;
+    background: linear-gradient(to right, var(--deep-navy), var(--purple-main));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .subtitle { font-size: 1.25rem; color: var(--slate-navy); border-left: 4px solid var(--spotify-green); padding-left: 20px; }
 .header-logo { width: 450px; height: auto; animation: float 6s ease-in-out infinite; filter: drop-shadow(0 20px 30px rgba(0,0,0,0.1)); }
 @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-12px); } }
 
 /* --- STATS BAR --- */
-.study-stats { background: var(--purple-light); padding: 30px 0; border-top: 1px solid rgba(0,0,0,0.05); border-bottom: 1px solid rgba(0,0,0,0.05); }
+.study-stats { background: var(--purple-light); padding: 30px 0; border-top: 1px solid rgba(0,0,0,0.05); border-bottom: 1px solid rgba(0,0,0,0.05); border-radius: 20px; }
 .stats-flex { display: flex; justify-content: space-between; }
 .stat-item strong { display: block; font-size: 0.7rem; color: var(--purple-main); text-transform: uppercase; margin-bottom: 4px; }
 .stat-item span { color: var(--deep-navy); font-weight: 700; font-size: 1.1rem; }
 
 /* --- METHODOLOGY --- */
-.method-phase { margin-bottom: 60px; border-left: 2px solid var(--purple-light); padding-left: 30px; }
+.method-phase { margin-bottom: 60px; border-left: 3px solid var(--purple-main); padding-left: 30px; }
 .genre-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding: 0; list-style: none; margin: 40px 0; }
-.genre-list li { padding: 12px 0; border-bottom: 2px solid var(--purple-light); font-weight: 600; text-align: center; transition: 0.3s; }
+.genre-list li { padding: 12px 0; border-bottom: 2px solid var(--purple-light); font-weight: 600; text-align: center; transition: 0.3s; background: var(--white); border-radius: 8px 8px 0 0; }
 .genre-list li:hover { border-bottom-color: var(--spotify-green); transform: translateY(-4px); }
 
 .metrics-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
-.metric-card { border-left: 3px solid var(--spotify-green); padding-left: 20px; transition: 0.3s; }
+.metric-card { border-left: 3px solid var(--spotify-green); padding-left: 20px; transition: 0.3s; background: #f8fafc; padding: 20px; border-radius: 0 12px 12px 0; }
 .metric-card:hover { background: var(--purple-light); transform: translateX(5px); }
 .metric-card strong { color: var(--spotify-green); display: block; font-size: 0.8rem; text-transform: uppercase; }
 
-/* --- SCHULTE SECTION (STABILIZED) --- */
+/* --- SCHULTE SECTION --- */
 .schulte-explanation-flex { display: flex; gap: 40px; align-items: center; margin: 40px 0; }
 .schulte-text { flex: 1.2; }
-.schulte-image-container { flex: 1; text-align: center; }
+.schulte-image-container { 
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+}
 .schulte-pic { width: 100%; max-width: 380px; border-radius: 12px; border: 1px solid var(--purple-light); box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition: 0.3s; }
 .schulte-pic:hover { transform: scale(1.05); }
-.caption { margin-top: 15px; font-size: 0.8rem; font-weight: 600; color: var(--purple-main); text-transform: uppercase; }
+.caption { margin-top: 15px; font-size: 0.8rem; font-weight: 600; color: var(--purple-main); text-transform: uppercase; display: block; width: 100%; }
 
-/* --- DIGITAL TESTING SUITE --- */
-.interface-showcase { 
-    margin-top: 50px; padding: 40px; background: var(--purple-light); 
-    border-radius: 24px; border: 1px solid rgba(99, 102, 241, 0.1);
-}
-.interface-text h4 { 
-    color: var(--purple-main) !important; text-transform: uppercase; letter-spacing: 1.5px; 
-    font-size: 0.9rem; margin-bottom: 15px; font-weight: 800;
-}
-.interface-text p { color: var(--slate-navy) !important; margin-bottom: 20px; }
-.tech-stack-row { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 30px; }
-.tech-tag { background: var(--white); padding: 6px 16px; border-radius: 100px; font-size: 0.8rem; font-weight: 700; border: 1px solid var(--purple-light); transition: 0.2s; }
-.tech-tag:hover { border-color: var(--spotify-green); color: var(--forest-green); transform: translateY(-2px); }
-.interface-action { margin-top: 30px; padding-top: 25px; border-top: 1px solid rgba(0,0,0,0.05); }
-.interface-action p { font-size: 0.85rem !important; font-weight: 800 !important; color: var(--slate-gray) !important; text-transform: uppercase; margin-bottom: 10px !important; }
-.interface-link { display: inline-flex; align-items: center; text-decoration: none; color: var(--purple-main); font-weight: 800; font-size: 1.1rem; transition: 0.3s; }
-.interface-link:hover { color: var(--spotify-green); }
-.interface-link span { margin-left: 8px; transition: 0.3s; }
-.interface-link:hover span { transform: translateX(8px); }
-
-/* --- INSIGHTS SECTION (FIXED FOR CLIPPING) --- */
-#preliminary-data {
-    padding-bottom: 80px; 
-    overflow: hidden; 
+/* --- INSIGHTS & EXPERIMENTAL SECTION --- */
+#preliminary-data, .experiment-insights {
+    padding-bottom: 40px; 
+    text-align: center; 
+    overflow: hidden;
 }
 
 .graph-grid { 
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     gap: 32px; 
-    margin-top: 40px; 
-    margin-bottom: 60px;
+    margin: 40px 0 60px 0;
     width: 100%;
-    clear: both;
+    text-align: left; 
 }
 
 .graph-card { 
@@ -133,23 +140,17 @@ header h1 { font-size: 3.2rem; font-weight: 800; color: var(--deep-navy); letter
     border: 1px solid var(--purple-light); 
     border-radius: 20px; 
     transition: 0.3s; 
-    min-height: 480px; /* Ensures vertical consistency */
+    min-height: 420px; 
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
 }
 
 .graph-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
-
-.graph-card img { 
-    width: 100%; 
-    max-height: 250px; 
-    object-fit: contain; 
-    border-radius: 12px; 
-    margin-bottom: 20px; 
-    border: 1px solid var(--cool-gray); 
-}
+.graph-card img, .graph-card canvas { width: 100% !important; max-height: 240px; object-fit: contain; border-radius: 12px; margin-bottom: 20px; }
 
 /* --- CTA GRID --- */
 .cta-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-bottom: 40px; }
-.cta-card { padding: 40px; background: var(--white); border: 1px solid var(--purple-light); border-radius: 20px; transition: 0.3s; }
+.cta-card { padding: 40px; background: #f8fafc; border: 1px solid var(--purple-light); border-radius: 20px; transition: 0.3s; text-align: left; }
 .cta-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
 .cta-card.highlight { background: var(--deep-navy); color: var(--white); border: none; }
 
@@ -160,7 +161,7 @@ header h1 { font-size: 3.2rem; font-weight: 800; color: var(--deep-navy); letter
 /* --- ANALYSIS STATUS --- */
 .analysis-status { padding: 60px 0; text-align: center; clear: both; }
 .status-card {
-    background: var(--purple-light); border-radius: 24px; padding: 50px 40px; 
+    background: #f8fafc; border-radius: 24px; padding: 50px 40px; 
     border: 1px solid rgba(99, 102, 241, 0.1); max-width: 800px; margin: 0 auto;
 }
 .pulse-container { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 20px; }
@@ -174,17 +175,19 @@ header h1 { font-size: 3.2rem; font-weight: 800; color: var(--deep-navy); letter
 @keyframes pulse-ring { 0% { transform: scale(1); opacity: 0.8; } 100% { transform: scale(3.5); opacity: 0; } }
 .status-card h3 { margin: 0 0 15px 0; color: var(--deep-navy); font-size: 1.8rem; }
 .status-card p { color: var(--slate-navy); max-width: 600px; margin: 0 auto 30px auto; }
+
+/* Progress Bar */
 .progress-bar-bg { width: 100%; max-width: 400px; height: 8px; background: var(--white); border-radius: 10px; margin: 0 auto 10px auto; overflow: hidden; }
 .progress-bar-fill { width: 60%; height: 100%; background: linear-gradient(90deg, var(--purple-main), var(--spotify-green)); border-radius: 10px; }
 .progress-label { font-size: 0.75rem; font-weight: 700; color: var(--slate-gray); }
 
 /* --- FINAL CTA BLOCK --- */
-.final-cta { background: var(--deep-navy); color: var(--white); text-align: center; padding: 80px 0; border-radius: 40px 40px 0 0; }
+.final-cta { background: var(--deep-navy); color: var(--white); text-align: center; padding: 80px 0; border-radius: 40px 40px 0 0; margin-top: 60px; }
 .final-cta h3 { color: var(--white); font-size: 2.25rem; margin-bottom: 15px; }
 .final-cta p { margin-bottom: 30px; opacity: 0.8; }
 
 /* --- FOOTER --- */
-footer { padding: 60px 0; border-top: 1px solid var(--cool-gray); text-align: center; color: var(--slate-gray); font-size: 0.85rem; }
+footer { padding: 60px 0; border-top: 1px solid var(--cool-gray); text-align: center; color: var(--slate-gray); font-size: 0.85rem; background: #0a0f1d; }
 
 /* --- TEAM PAGE --- */
 .team-stack { display: flex; flex-direction: column; gap: 32px; padding: 60px 0; }
@@ -196,9 +199,20 @@ footer { padding: 60px 0; border-top: 1px solid var(--cool-gray); text-align: ce
 .team-row:hover { border-color: var(--purple-main); }
 .member-photo { flex: 0 0 240px; height: 240px; background: var(--cool-gray); }
 .member-photo img { width: 100%; height: 100%; object-fit: cover; }
-.member-info { padding: 40px; }
+.member-info { padding: 40px; text-align: left; }
 .role { display: block; color: var(--spotify-green); font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 8px; }
 .member-info h2 { font-size: 1.75rem; margin: 0 0 12px 0; }
+
+/* --- BIG GRAPH STYLING --- */
+.full-width { width: 100%; margin-top: 40px; }
+.big-graph-container {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 24px;
+    border: 1px solid var(--purple-light);
+    height: 400px;
+    margin-top: 30px;
+}
 
 /* --- RESPONSIVE BREAKPOINTS --- */
 @media (max-width: 950px) {
@@ -206,49 +220,13 @@ footer { padding: 60px 0; border-top: 1px solid var(--cool-gray); text-align: ce
     .header-title-flex { flex-direction: column; text-align: center; }
     .subtitle { border-left: none; border-top: 4px solid var(--spotify-green); padding: 20px 0 0 0; }
     .header-logo { width: 80%; max-width: 350px; }
-    .graph-grid, .cta-grid, .genre-list, .schulte-explanation-flex { grid-template-columns: 1fr; display: flex; flex-direction: column; }
+    .graph-grid, .cta-grid, .genre-list, .schulte-explanation-flex { grid-template-columns: 1fr !important; display: flex; flex-direction: column; }
     .stats-flex { flex-direction: column; gap: 20px; text-align: center; }
+    .graph-card { min-height: auto; }
+    main section { padding: 40px 20px; } 
 }
 
 @media (max-width: 850px) {
     .team-row { flex-direction: column; text-align: center; }
     .member-photo { width: 100%; height: 300px; flex: none; }
-}
-
-/* --- CENTER ALL INSIGHTS CONTENT --- */
-#preliminary-data {
-    padding-bottom: 80px; 
-    overflow: hidden; 
-    text-align: center; /* This centers the H2 and the lead-text p */
-}
-
-/* This ensures the grid itself stays centered even if it has an odd number of cards */
-.graph-grid { 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 32px; 
-    margin-top: 40px; 
-    margin-bottom: 60px;
-    width: 100%;
-    text-align: left; /* Restores left-alignment for text INSIDE the cards */
-}
-
-.experiment-insights {
-    text-align: center;
-    width: 100%;
-}
-
-/* Ensure the image and its caption are always stacked vertically */
-.schulte-image-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers the image and caption horizontally */
-    text-align: center;
-}
-
-/* Optional: Ensure the caption doesn't float up too close to the image */
-.caption {
-    margin-top: 15px; 
-    display: block; /* Guarantees it takes up its own line */
-    width: 100%;
 }
