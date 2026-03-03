@@ -277,38 +277,41 @@
         Chart.defaults.font.family = "'Inter', sans-serif";
         Chart.defaults.color = '#1e293b';
 
-        // 1. Performance
+        const commonOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { display: false } },
+            scales: {
+                y: { title: { display: true, font: { weight: 'bold' } }, beginAtZero: true },
+                x: { title: { display: true, font: { weight: 'bold' } } }
+            }
+        };
+
+        // Graph 1: Performance
         new Chart(document.getElementById('perfChart'), {
             type: 'bar',
             data: {
-                labels: ['Silence', 'Pop', 'Country', 'EDM', 'Classical'],
+                labels: ['Silence', 'Pop', 'Country', 'EDM', 'Classical', 'Pref'],
                 datasets: [{
-                    data: [93.2, 91.8, 88.2, 73.6, 78.3],
-                    backgroundColor: ['#64748b', '#fb7185', '#fb923c', '#22c55e', '#60a5fa'],
+                    data: [93.2, 91.8, 88.2, 73.6, 78.3, 80.1],
+                    backgroundColor: ['#64748b', '#fb7185', '#fb923c', '#22c55e', '#60a5fa', '#6366f1'],
                     borderRadius: 5
                 }]
             },
-            options: { 
-                responsive: true, maintainAspectRatio: false, 
-                plugins: { legend: { display: false } },
-                scales: { y: { title: { display: true, text: 'Seconds' }, beginAtZero: false, min: 60 } }
-            }
+            options: { ...commonOptions, scales: { y: { title: { display: true, text: 'Completion Time (Seconds)' }, min: 60 }, x: { title: { display: true, text: 'Environment' } } } }
         });
 
-        // 2. Lyric Tax
+        // Graph 2: Lyric Tax
         new Chart(document.getElementById('lyricChart'), {
             type: 'doughnut',
             data: {
                 labels: ['Lyric Distraction', 'Focused Flow'],
-                datasets: [{
-                    data: [34, 66],
-                    backgroundColor: ['#ef4444', '#22c55e']
-                }]
+                datasets: [{ data: [34, 66], backgroundColor: ['#ef4444', '#22c55e'] }]
             },
-            options: { responsive: true, maintainAspectRatio: false }
+            options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: true, position: 'bottom' } } }
         });
 
-        // 3. BPM Improvement
+        // Graph 3: BPM Advantage (LABELED)
         new Chart(document.getElementById('tempoChart'), {
             type: 'line',
             data: {
@@ -321,10 +324,16 @@
                     tension: 0.3
                 }]
             },
-            options: { responsive: true, maintainAspectRatio: false }
+            options: { 
+                ...commonOptions,
+                scales: { 
+                    y: { title: { display: true, text: '% Improvement vs. Silence' } },
+                    x: { title: { display: true, text: 'Tempo Categorization' } }
+                } 
+            }
         });
 
-        // 4. Difficulty
+        // Graph 4: Difficulty (LABELED)
         new Chart(document.getElementById('diffChart'), {
             type: 'bar',
             data: {
@@ -335,16 +344,22 @@
                     borderRadius: 5
                 }]
             },
-            options: { responsive: true, maintainAspectRatio: false }
+            options: { 
+                ...commonOptions,
+                scales: { 
+                    y: { title: { display: true, text: 'Subjective Difficulty (1-5)' }, max: 5 },
+                    x: { title: { display: true, text: 'Trial Genre' } }
+                } 
+            }
         });
 
-        // 5. Big Productivity Chart
+        // Big Graph: Productivity Boost
         new Chart(document.getElementById('productivityChart'), {
             type: 'bar',
             data: {
                 labels: ['Pop', 'Country', 'Preferred', 'Classical', 'EDM (Peak)'],
                 datasets: [{
-                    label: '% Productivity Boost vs. Silence',
+                    label: '% Productivity Boost',
                     data: [1.5, 5.7, 16.4, 19.0, 26.6], 
                     backgroundColor: ['#fb7185', '#fb923c', '#facc15', '#60a5fa', '#22c55e'],
                     borderRadius: 10,
@@ -352,12 +367,10 @@
                 }]
             },
             options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: { legend: { display: false } },
+                ...commonOptions,
                 scales: {
-                    y: { title: { display: true, text: '% Productivity Increase' }, beginAtZero: true },
-                    x: { title: { display: true, text: 'Environment' } }
+                    y: { title: { display: true, text: '% Productivity Increase' } },
+                    x: { title: { display: true, text: 'Auditory Environment' } }
                 }
             }
         });
