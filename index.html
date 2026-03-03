@@ -53,7 +53,6 @@
                 As part of a joint <strong>Public Health and Informatics</strong> initiative at UC Irvine, 
                 we are investigating the intersection of digital media and focus, particularly in relation to college students.
             </p>
-
             <div class="research-grid">
                 <div class="research-content">
                     <h3>Background and Significance</h3>
@@ -67,27 +66,25 @@
             </div>
         </section>
 
-        <hr class="section-divider">
-
-        <h1>Participate</h1>
-        <section id="participate" class="cta-grid">
-            <div class="cta-card">
-                <h3>1. Baseline Survey</h3>
-                <p>Provide information about your musical background and habits.</p>
-                <a href="https://forms.gle/nxiiKmn8cCppgc4t5" target="_blank" class="btn secondary">Pre-Study Survey</a>
-            </div>
-            
-            <div class="cta-card highlight">
-                <h3>2. The Experiment</h3>
-                <p>Listen to music and complete the Schulte Grid focus task.</p>
-                <a href="https://lanajwang13.github.io/Inf172/" target="_blank" class="btn primary">Launch Experiment</a>
+        <section id="participate">
+            <h1>Participate</h1>
+            <div class="cta-grid">
+                <div class="cta-card">
+                    <h3>1. Baseline Survey</h3>
+                    <p>Provide information about your musical background and habits.</p>
+                    <a href="https://forms.gle/nxiiKmn8cCppgc4t5" target="_blank" class="btn secondary">Pre-Study Survey</a>
+                </div>
+                
+                <div class="cta-card highlight">
+                    <h3>2. The Experiment</h3>
+                    <p>Listen to music and complete the Schulte Grid focus task.</p>
+                    <a href="https://lanajwang13.github.io/Inf172/" target="_blank" class="btn primary">Launch Experiment</a>
+                </div>
             </div>
         </section>
 
-        <hr class="section-divider">
-
-        <h1>Methodology</h1>
         <section id="methodology">
+            <h1>Methodology</h1>
             <h2>Research Protocol</h2>
             
             <div class="method-phase">
@@ -138,136 +135,160 @@
             </div>
         </section>
 
-        <hr class="section-divider">
-
-        <h1>Insights</h1>
         <section id="preliminary-data">
-            <div class="container">
-                <h2>Initial Survey Insights</h2>
-                <p class="lead-text">Before the experiment, we surveyed 54 college students to understand their auditory study habits.</p>
-                
+            <h2>Initial Survey Insights</h2>
+            <p class="lead-text">Before the experiment, we surveyed 54 college students to understand their auditory study habits.</p>
+            
+            <div class="graph-grid">
+                <div class="graph-card">
+                    <img src="172SruveyFocus1.svg" alt="Focus Habits">
+                    <div class="graph-info">
+                        <h4>Focus Habits</h4>
+                        <p>A majority of students, 70.3%, report only being able to focus for less than 1 hour before needing a break.</p>
+                    </div>
+                </div>
+
+                <div class="graph-card">
+                    <img src="172SruveyGenres1.svg" alt="Popular Study Genres">
+                    <div class="graph-info">
+                        <h4>Popular Genres</h4>
+                        <p>Pop is the most popular (63.3%), followed closely by R&B and Indie. Country is the least popular (8.2%).</p>
+                    </div>
+                </div>
+
+                <div class="graph-card">
+                    <img src="PreSurvey3.png" alt="Average Study Session Duration">
+                    <div class="graph-info">
+                        <h4>Session Endurance</h4>
+                        <p>When studying with music, a significant 74% of students report their sessions typically last 2-3 hours.</p>
+                    </div>
+                </div>
+
+                <div class="graph-card">
+                    <img src="PreSurvey4.png" alt="Perceived Impact of Music on Focus">
+                    <div class="graph-info">
+                        <h4>Perceived Focus Impact</h4>
+                        <p>56% of students report that music improves concentration, while 34% acknowledge it can be a source of distraction.</p>
+                    </div>
+                </div>
+
+                <div class="graph-card">
+                    <img src="PreSurvey5.png" alt="Genre-Task Specificity">
+                    <div class="graph-info">
+                        <h4>Genre-Task Specificity</h4>
+                        <p>34% of students notice different genres work better for specific tasks, while a larger portion (38%) remains unsure.</p>
+                    </div>
+                </div>
+
+                <div class="graph-card">
+                    <img src="PreSurvey6.png" alt="Task-Specific Benefits">
+                    <div class="graph-info">
+                        <h4>Task-Specific Benefits</h4>
+                        <p>Music is most heavily utilized for creative work (82%) and problem-solving (68%), but less so for reading (12%).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experiment-insights">
+                <hr class="section-divider">
+                <h2>Experimental Insights</h2>
                 <div class="graph-grid">
+                    
                     <div class="graph-card">
-                        <img src="172SruveyFocus1.svg" alt="Focus Habits">
+                        <canvas id="perfChart"></canvas>
                         <div class="graph-info">
-                            <h4>Focus Habits</h4>
-                            <p>A majority of students, 70.3%, report only being able to focus for less than 1 hour before needing a break.</p>
+                            <h4>Objective Performance Trends</h4>
+                            <p>
+                                <strong>EDM</strong> and <strong>Classical</strong> emerged as the strongest performers objectively, with average completion times of <strong>73.6s</strong> and <strong>78.3s</strong>. 
+                            </p>
+                            <p>
+                                Unlike the "No Music" control (93.2s), these environments provided a stable auditory backdrop that reduced internal mind-wandering. By minimizing cognitive friction, these genres allowed participants to enter a state of deep work more efficiently.
+                            </p>
                         </div>
                     </div>
 
                     <div class="graph-card">
-                        <img src="172SruveyGenres1.svg" alt="Popular Study Genres">
+                        <div class="lyric-tax-container">
+                            <div class="quote-pop-out">
+                                <p>"Thinking about lyrics instead of the next number... my mind was all over the place."</p>
+                                <cite>— Test Participant</cite>
+                            </div>
+                            <div class="quote-pop-out highlight">
+                                <p>"Wanted to sing along and would get a little distracted from the task."</p>
+                                <cite>— Test Participant</cite>
+                            </div>
+                            <div class="quote-pop-out">
+                                <p>"I was focusing a lot on the lyrics, and it was distracting."</p>
+                                <cite>— Test Participant</cite>
+                            </div>
+                        </div>
                         <div class="graph-info">
-                            <h4>Popular Genres</h4>
-                            <p>Pop is the most popular (63.3%), followed closely by R&B and Indie. Country is the least popular (8.2%).</p>
+                            <h4>The "Lyric Tax" & Interference</h4>
+                            <p>
+                                <strong>Prominent, well-enunciated lyrics</strong> proved to be the single biggest disruptor to focus. Because the brain naturally tries to process clear speech, these songs created "cognitive competition" for the participants' attention.
+                            </p>
+                            <p>
+                                While <strong>Pop</strong> is culturally familiar, its vocal clarity forced participants into "mental karaoke"—demonstrating how verbal interference slows visual search.
+                            </p>
                         </div>
                     </div>
 
                     <div class="graph-card">
-                        <img src="PreSurvey3.png" alt="Average Study Session Duration">
+                        <canvas id="tempoChart"></canvas>
                         <div class="graph-info">
-                            <h4>Session Endurance</h4>
-                            <p>When studying with music, a significant 74% of students report their sessions typically last 2-3 hours.</p>
+                            <h4>The BPM Advantage & Rhythm</h4>
+                            <p>
+                                Our data suggests that <strong>tempo</strong> is a stronger driver of performance than genre label. High-BPM tracks created a psychological "pace" that matched the clicking task, leading to a 20% speed increase.
+                            </p>
+                            <p>
+                                Participants described these faster songs as providing an external "drive" anchor. Slower genres were often described as "sluggish," failing to maintain visual search momentum.
+                            </p>
                         </div>
                     </div>
 
                     <div class="graph-card">
-                        <img src="PreSurvey4.png" alt="Perceived Impact of Music on Focus">
+                        <canvas id="diffChart"></canvas>
                         <div class="graph-info">
-                            <h4>Perceived Focus Impact</h4>
-                            <p>56% of students report that music improves concentration, while 34% acknowledge it can be a source of distraction.</p>
-                        </div>
-                    </div>
-
-                    <div class="graph-card">
-                        <img src="PreSurvey5.png" alt="Genre-Task Specificity">
-                        <div class="graph-info">
-                            <h4>Genre-Task Specificity</h4>
-                            <p>34% of students notice different genres work better for specific tasks, while a larger portion (38%) remains unsure.</p>
-                        </div>
-                    </div>
-
-                    <div class="graph-card">
-                        <img src="PreSurvey6.png" alt="Task-Specific Benefits">
-                        <div class="graph-info">
-                            <h4>Task-Specific Benefits</h4>
-                            <p>Music is most heavily utilized for creative work (82%) and problem-solving (68%), but less so for reading (12%).</p>
+                            <h4>The Familiarity Paradox</h4>
+                            <p>
+                                Familiarity produced a split effect: it helped focus when music was beat-heavy (EDM), but became a liability when the song had singable lyrics. 
+                            </p>
+                            <p>
+                                Knowing lyrics caused participants to mentally anticipate the next line rather than the next number in the grid. This suggests that ideal study music depends on how much "active processing" it requires from the brain.
+                            </p>
                         </div>
                     </div>
                 </div>
 
-                <div class="experiment-insights">
-                    <hr class="section-divider">
-                    <h2>Experimental Insights</h2>
-                    <p class="lead-text">After conducting over 20 controlled trials, our team analyzed performance across six environments.</p>
-
-                    <div class="graph-grid">
-                        <div class="graph-card">
-                            <canvas id="perfChart"></canvas>
-                            <div class="graph-info">
-                                <h4>Objective Performance Trends</h4>
-                                <p><strong>EDM</strong> and <strong>Classical</strong> emerged as the strongest performers objectively, with average times of <strong>73.6s</strong> and <strong>78.3s</strong>. These genres also received the lowest difficulty ratings.</p>
-                                <p>Unlike silence (93.2s), these environments provided a stable auditory backdrop that reduced mind-wandering and allowed for a faster flow state.</p>
-                            </div>
-                        </div>
-
-                        <div class="graph-card">
-                            <canvas id="lyricChart"></canvas>
-                            <div class="graph-info">
-                                <h4>The "Lyric Tax" & Interference</h4>
-                                <p><strong>Prominent, well-enunciated lyrics</strong> were the single biggest disruptor. Clear vocals forced participants into "mental karaoke," causing verbal interference with the task.</p>
-                                <p>While Pop is familiar, its lyrical density splits attention, explaining why it underperformed instrumental tracks in both speed and accuracy.</p>
-                            </div>
-                        </div>
-
-                        <div class="graph-card">
-                            <canvas id="tempoChart"></canvas>
-                            <div class="graph-info">
-                                <h4>The BPM Advantage & Rhythm</h4>
-                                <p><strong>Tempo</strong> is a stronger driver of performance than genre label. High-BPM tracks created a psychological "pace" matching the Schulte task, leading to a 20% speed increase.</p>
-                                <p>Faster songs provided an external "drive" anchor, while slower genres like Country (88.2s) were often described as "sluggish" for high-speed search tasks.</p>
-                            </div>
-                        </div>
-
-                        <div class="graph-card">
-                            <canvas id="diffChart"></canvas>
-                            <div class="graph-info">
-                                <h4>The Familiarity Paradox</h4>
-                                <p>Familiarity helped focus when music was beat-heavy (EDM), but became a liability when the song had singable lyrics (Pop).</p>
-                                <p>Knowing lyrics caused participants to mentally anticipate the next line rather than the next number, showing that active vocal processing is a major enemy of focus.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="full-width-analysis">
-                        <hr class="section-divider">
+                <div class="full-width">
+                    <div class="big-graph-container">
                         <h2>The Focus Boost: Net Productivity Gain</h2>
-                        <p class="lead-text">Normalized against the silence baseline, higher bars indicate a larger "Focus Boost."</p>
-                        <div class="big-graph-container" style="height: 500px; padding: 20px; background: white; border-radius: 20px; border: 1px solid #eef2ff;">
-                            <canvas id="productivityChart"></canvas>
-                        </div>
+                        <canvas id="productivityChart"></canvas>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="analysis-status">
-            <div class="container">
-                <div class="status-card">
-                    <div class="pulse-container">
-                        <div class="pulse-dot"></div>
-                        <span class="status-tag">Live Phase</span>
-                    </div>
-                    <h3>Analysis in Progress...</h3>
-                    <p>Processing remaining experimental data. Results are being updated in real-time!</p>
-                    <div class="progress-bar-bg">
-                        <div class="progress-bar-fill"></div>
-                    </div>
-                    <span class="progress-label">Data Processing: 60% Complete</span>
+            <div class="status-card">
+                <div class="pulse-container">
+                    <div class="pulse-dot"></div>
+                    <span class="status-tag">Live Phase</span>
                 </div>
+                <h3>Analysis in Progress...</h3>
+                <div class="progress-bar-bg"><div class="progress-bar-fill"></div></div>
+                <span class="progress-label">Data Processing: 60% Complete</span>
             </div>
         </section>
     </main>
+
+    <div class="final-cta">
+        <div class="container">
+            <h3>Ready to contribute to our research?</h3>
+            <p>Your participation helps us better understand the impact of music on student focus.</p>
+            <a href="https://lanajwang13.github.io/Inf172/" target="_blank" class="btn primary">Start the Experiment</a>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2026 Music & Health Research Project | UCI Informatics Group 3</p>
@@ -287,7 +308,7 @@
             }
         };
 
-        // Graph 1: Performance
+        // 1. Performance
         new Chart(document.getElementById('perfChart'), {
             type: 'bar',
             data: {
@@ -298,20 +319,10 @@
                     borderRadius: 5
                 }]
             },
-            options: { ...commonOptions, scales: { y: { title: { display: true, text: 'Completion Time (Seconds)' }, min: 60 }, x: { title: { display: true, text: 'Environment' } } } }
+            options: { ...commonOptions, scales: { y: { title: { display: true, text: 'Completion Time (Seconds)' }, min: 60 }, x: { title: { display: true, text: 'Auditory Environment' } } } }
         });
 
-        // Graph 2: Lyric Tax
-        new Chart(document.getElementById('lyricChart'), {
-            type: 'doughnut',
-            data: {
-                labels: ['Lyric Distraction', 'Focused Flow'],
-                datasets: [{ data: [34, 66], backgroundColor: ['#ef4444', '#22c55e'] }]
-            },
-            options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: true, position: 'bottom' } } }
-        });
-
-        // Graph 3: BPM Advantage (LABELED)
+        // 2. BPM Advantage (Labeled)
         new Chart(document.getElementById('tempoChart'), {
             type: 'line',
             data: {
@@ -324,16 +335,10 @@
                     tension: 0.3
                 }]
             },
-            options: { 
-                ...commonOptions,
-                scales: { 
-                    y: { title: { display: true, text: '% Improvement vs. Silence' } },
-                    x: { title: { display: true, text: 'Tempo Categorization' } }
-                } 
-            }
+            options: { ...commonOptions, scales: { y: { title: { display: true, text: '% Improvement vs. Silence' } }, x: { title: { display: true, text: 'Musical Tempo' } } } }
         });
 
-        // Graph 4: Difficulty (LABELED)
+        // 3. Difficulty (Labeled)
         new Chart(document.getElementById('diffChart'), {
             type: 'bar',
             data: {
@@ -344,16 +349,10 @@
                     borderRadius: 5
                 }]
             },
-            options: { 
-                ...commonOptions,
-                scales: { 
-                    y: { title: { display: true, text: 'Subjective Difficulty (1-5)' }, max: 5 },
-                    x: { title: { display: true, text: 'Trial Genre' } }
-                } 
-            }
+            options: { ...commonOptions, scales: { y: { title: { display: true, text: 'Difficulty Rating (1-5)' }, max: 5 }, x: { title: { display: true, text: 'Genre' } } } }
         });
 
-        // Big Graph: Productivity Boost
+        // 4. Productivity Boost
         new Chart(document.getElementById('productivityChart'), {
             type: 'bar',
             data: {
@@ -366,13 +365,7 @@
                     barThickness: 60
                 }]
             },
-            options: {
-                ...commonOptions,
-                scales: {
-                    y: { title: { display: true, text: '% Productivity Increase' } },
-                    x: { title: { display: true, text: 'Auditory Environment' } }
-                }
-            }
+            options: { ...commonOptions, scales: { y: { title: { display: true, text: '% Productivity Increase' } }, x: { title: { display: true, text: 'Auditory Environment' } } } }
         });
     </script>
 </body>
