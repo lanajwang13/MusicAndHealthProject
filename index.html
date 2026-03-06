@@ -14,9 +14,10 @@
             <div class="nav-logo">Group 3</div>
             <ul class="nav-links">
                 <li><a href="#about">Purpose</a></li>
-                <li><a href="#participate">Participate</a></li>
                 <li><a href="#methodology">Methodology</a></li>
-                <li><a href="#preliminary-data">Insights</a></li>
+                <li><a href="#preliminary-data">Results</a></li>
+                <li><a href="#next-steps">Next Steps</a></li>
+                <li><a href="abstract.html">Abstract</a></li>
                 <li><a href="team.html">Team</a></li>
             </ul>
         </div>
@@ -45,23 +46,31 @@
     </section>
 
     <main class="container">
-        
+        <!-- Purpose -->
         <section id="about">
             <h1>Purpose</h1>
             <h2>Our Study</h2>
-            <p class="lead-text">
-                As part of a joint <strong>Public Health and Informatics</strong> initiative at UC Irvine, 
-                we are investigating the intersection of digital media and focus, particularly in relation to college students.
-            </p>
-            <div class="research-grid">
-                <div class="research-content">
-                    <h3>Background and Significance</h3>
-                    <p>
-                        College students are often taught the idea that with classes comes studying; focus is very important in retaining memory for the best academic performance. However, due to the present digital age, constant exposure to online applications has thinned attention spans and has become fragile.
-                    </p>
-                    <p>
-                        With the rise of tools such as AI, short-form content media, and the simplification of educational texts, student engagement is declining. This research explores the relationship between mental stimulation and attention, helping students develop healthier habits.
-                    </p>
+            
+            <div class="background-narrative">
+                <p>As part of a joint Public Health and Informatics initiative at UC Irvine, we are investigating the intersection of digital media and focus, particularly in relation to college students.
+                    
+                </p><p>
+                    Modern academic environments are increasingly defined by digital fragmentation, where constant exposure to short-form media and AI-assisted tools consistently challenges a student’s ability to maintain "deep work" focus. While many students turn to music as a cognitive anchor to combat these distractions, existing literature remains largely confined to the benefits of traditional classical or instrumental genres. 
+                </p>
+                <p>
+                    This study bridges that gap by investigating how a diverse array of contemporary auditory environments—ranging from high-tempo EDM to lyrical Pop—directly impacts cognitive endurance and attention maintenance among the UC Irvine student population.
+                </p>
+            </div>
+
+            <div class="purpose-grid">
+                <div class="purpose-card">
+                    <h3>The Problem: Cognitive Fragmentation</h3>
+                    <p>In the digital landscape, the rise of "snackable" content has created a state of fragmented attention. We are investigating how constant context-switching makes student concentration increasingly fragile during high-stakes academic tasks.</p>
+                </div>
+
+                <div class="purpose-card">
+                    <h3>Our Objective</h3>
+                    <p>By measuring performance against six distinct auditory variables, we aim to design evidence-based habits that help students rebuild focus through intentional music selection.</p>
                 </div>
             </div>
         </section>
@@ -88,17 +97,29 @@
             <h2>Research Protocol</h2>
             
             <div class="method-phase">
-                <h3>Phase I: Preliminary Population Survey</h3>
-                <p>To establish a baseline for contemporary student habits, we conducted an initial cross-sectional survey that garnered over 50 responses. This data allowed us to determine the specific musical genres utilized in the experimental phase.</p>
+                <h3>Phase I: Preliminary Population Study</h3>
+                <p>To establish a baseline for contemporary student habits, we conducted an initial cross-sectional 
+                    <strong>survey that garnered 55 responses.</strong> Our goal was to establish the current music-listening habits of college students.
+                    Questions centered on existing musib prefreences and habits, observed study and focus patterns, and identifying 
+                    potential participants for our experimental study discussed in Phase II. 
+                    <br><br>
+                    This data allowed us to determine the specific musical genres utilized in the experimental phase.</p>
             </div>
 
+            <!-- Phase 2: Experiment -->
+
             <div class="method-phase">
-                <h3>Phase II: Experimental Design & Protocol</h3>
-                <p>We developed a custom-coded testing environment to ensure standardized data collection. The experiment consists of six distinct trials designed to measure focus amidst various auditory environments.</p>
+                <h3>Phase II: Experimental Design & Research Suite</h3>
+                <p>We developed a custom-coded testing environment to ensure standardized data collection. The experiment 
+                    consists of six distinct trials designed to measure focus amidst various auditory environments. Leveraging
+                    the testing suite, <strong>our team conducted 19 in-person, one-on-one testing sessions.</strong></p>
 
                 <div class="schulte-explanation-flex">
                     <div class="schulte-text">
                         <p><strong>The Schulte Grid Task:</strong> Participants are presented with a 7x7 grid of randomized numbers. They are asked to locate numbers 1 through 49 in ascending order as quickly as possible. This task measures mental speed and visual search efficiency.</p>
+                    
+                        <p><strong>Genres:</strong> These were the genres we selected for each round, including our "Silence" control group.</p>
+                        
                         <ul class="genre-list">
                             <li><strong>Control:</strong> Silence</li>
                             <li><strong>Pop:</strong> High Popularity</li>
@@ -113,35 +134,58 @@
                         <span class="caption">Testing Tool: 7x7 Randomized Schulte Grid</span>
                     </div>
                 </div>
-            </div>
 
-            <div class="method-phase">
-                <h3>Phase III: Data Collection & Metrics</h3>
-                <p>For each round, we captured three primary data points to analyze cognitive load and performance:</p>
-                <div class="metrics-grid">
-                    <div class="metric-card">
-                        <strong>Quantitative Performance</strong>
-                        <span>Completion time in seconds</span>
+                <div class="method-sub-block" style="margin-top: 30px;">
+                    <h4 style="margin-bottom: 15px;">Data Collection & Metrics</h4>
+                    <p>For each round, we captured three primary data points to analyze cognitive load and performance:</p>
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <strong>Quantitative Performance</strong>
+                            <span>Completion time in seconds</span>
+                        </div>
+                        <div class="metric-card">
+                            <strong>Subjective Complexity</strong>
+                            <span>Difficulty rated on a 5-point scale</span>
+                        </div>
+                        <div class="metric-card">
+                            <strong>Auditory Familiarity</strong>
+                            <span>Song recognition rated on a 1-5 scale</span>
+                        </div>
                     </div>
-                    <div class="metric-card">
-                        <strong>Subjective Complexity</strong>
-                        <span>Difficulty rated on a 5-point scale</span>
-                    </div>
-                    <div class="metric-card">
-                        <strong>Auditory Familiarity</strong>
-                        <span>Song recognition rated on a 1-5 scale</span>
+                </div>
+
+                <!-- Testing suite description -->
+
+                <div class="metric-card" style="margin-top: 30px; text-align: left; padding: 25px; border: 1px solid var(--purple-light); background-color: var(--cool-gray);">
+                    <h4 style="color: var(--purple-main); margin-bottom: 10px;">Research Testing Suite</h4>
+                    <p>To minimize external variables, we engineered a specialized web-based research suite. This platform automates the rotation of auditory environments while tracking sub-second response times, ensuring high data fidelity across different browsers.</p>
+                    
+                    <div class="tech-stack" style="margin-top: 15px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JAVASCRIPT</span>
+                        <span class="tech-tag">GITHUB PAGES</span>
+                        
+                        <a href="https://lanajwang13.github.io/Inf172/" target="_blank" class="btn primary" style="padding: 8px 20px; font-size: 0.8rem; margin-left: auto;">Launch Experiment</a>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Initial Insights -->
         <section id="preliminary-data">
+            <h1>Results & Analysis</h1>
             <h2>Initial Survey Insights</h2>
-            <p class="lead-text">Before the experiment, we surveyed 54 college students to understand their auditory study habits.</p>
-            
+                <p>
+                                Before the experimental phase, we surveyed 55 college students to bridge the gap between their 
+                                perceived focus habits and their actual auditory choices. The results confirmed that while 
+                                students rely on music to sustain multi-hour study sessions, their preference for lyrical 
+                                genres often directly competes with the high cognitive load required for academic 
+                                reading and comprehension.
+                            </p>
             <div class="graph-grid">
                 <div class="graph-card">
-                    <img src="172SruveyFocus1.svg" alt="Focus Habits">
+                    <img src="UpdatedPic1.png" alt="Focus Habits">
                     <div class="graph-info">
                         <h4>Focus Habits</h4>
                         <p>A majority of students, 70.3%, report only being able to focus for less than 1 hour before needing a break.</p>
@@ -152,7 +196,7 @@
                     <img src="172SruveyGenres1.svg" alt="Popular Study Genres">
                     <div class="graph-info">
                         <h4>Popular Genres</h4>
-                        <p>Pop is the most popular (63.3%), followed closely by R&B and Indie. Country is the least popular (8.2%).</p>
+                        <p>Pop is the most popular (63.3%), followed closely by R&B and Indie.</p>
                     </div>
                 </div>
 
@@ -176,7 +220,7 @@
                     <img src="PreSurvey5.png" alt="Genre-Task Specificity">
                     <div class="graph-info">
                         <h4>Genre-Task Specificity</h4>
-                        <p>34% of students notice different genres work better for specific tasks, while a larger portion (38%) remains unsure.</p>
+                        <p>34% of students notice different genres work better for specific tasks.</p>
                     </div>
                 </div>
 
@@ -184,26 +228,30 @@
                     <img src="PreSurvey6.png" alt="Task-Specific Benefits">
                     <div class="graph-info">
                         <h4>Task-Specific Benefits</h4>
-                        <p>Music is most heavily utilized for creative work (82%) and problem-solving (68%), but less so for reading (12%).</p>
+                        <p>Music is most heavily utilized for creative work (82%) and problem-solving (68%).</p>
                     </div>
                 </div>
             </div>
 
+            <!-- Experimental Insights -->
+
             <div class="experiment-insights">
+                
                 <hr class="section-divider">
                 <h2>Experimental Insights</h2>
+
+                 <p>Our experimental phase tested the limits of student focus by measuring performance against different 
+                auditory variables. The data confirmed a clear "Lyric Tax," where verbal processing of songs competes
+                 for cognitive resources, while also revealing a significant "BPM Advantage" where high-tempo, 
+                 instrumental tracks act as a rhythmic anchor to increase visual search speed.</p>
+                 
                 <div class="graph-grid">
                     
                     <div class="graph-card">
                         <canvas id="perfChart"></canvas>
                         <div class="graph-info">
                             <h4>Objective Performance Trends</h4>
-                            <p>
-                                <strong>EDM</strong> and <strong>Classical</strong> emerged as the strongest performers objectively, with average completion times of <strong>73.6s</strong> and <strong>78.3s</strong>. 
-                            </p>
-                            <p>
-                                Unlike the "No Music" control (93.2s), these environments provided a stable auditory backdrop that reduced internal mind-wandering. By minimizing cognitive friction, these genres allowed participants to enter a state of deep work more efficiently.
-                            </p>
+                            <p><strong>EDM</strong> and <strong>Classical</strong> emerged as the strongest performers objectively, with average completion times of <strong>73.6s</strong> and <strong>78.3s</strong>.</p>
                         </div>
                     </div>
 
@@ -224,12 +272,7 @@
                         </div>
                         <div class="graph-info">
                             <h4>The "Lyric Tax" & Interference</h4>
-                            <p>
-                                <strong>Prominent, well-enunciated lyrics</strong> proved to be the single biggest disruptor to focus. Because the brain naturally tries to process clear speech, these songs created "cognitive competition" for the participants' attention.
-                            </p>
-                            <p>
-                                While <strong>Pop</strong> is culturally familiar, its vocal clarity forced participants into "mental karaoke"—demonstrating how verbal interference slows visual search.
-                            </p>
+                            <p>Prominent, well-enunciated lyrics proved to be the single biggest disruptor to focus, creating "cognitive competition" for the participants' attention.</p>
                         </div>
                     </div>
 
@@ -237,12 +280,7 @@
                         <canvas id="tempoChart"></canvas>
                         <div class="graph-info">
                             <h4>The BPM Advantage & Rhythm</h4>
-                            <p>
-                                Our data suggests that <strong>tempo</strong> is a stronger driver of performance than genre label. High-BPM tracks created a psychological "pace" that matched the clicking task, leading to a 20% speed increase.
-                            </p>
-                            <p>
-                                Participants described these faster songs as providing an external "drive" anchor. Slower genres were often described as "sluggish," failing to maintain visual search momentum.
-                            </p>
+                            <p>Our data suggests that tempo is a stronger driver of performance than genre label, with high-BPM tracks providing an external "drive" anchor.</p>
                         </div>
                     </div>
 
@@ -250,36 +288,115 @@
                         <canvas id="diffChart"></canvas>
                         <div class="graph-info">
                             <h4>The Familiarity Paradox</h4>
-                            <p>
-                                Familiarity produced a split effect: it helped focus when music was beat-heavy (EDM), but became a liability when the song had singable lyrics. 
-                            </p>
-                            <p>
-                                Knowing lyrics caused participants to mentally anticipate the next line rather than the next number in the grid. This suggests that ideal study music depends on how much "active processing" it requires from the brain.
-                            </p>
+                            <p>Knowing lyrics caused participants to mentally anticipate the next line rather than the next number in the grid, slowing visual search speed.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="full-width">
+    
                     <div class="big-graph-container">
-                        <h2>The Focus Boost: Net Productivity Gain</h2>
-                        <canvas id="productivityChart"></canvas>
+        <h2>The Focus Boost: Net Productivity Gain</h2>
+        <canvas id="productivityChart"></canvas>
+    </div>
+
+    <div class="analysis-text" style="text-align: left; margin-top: 40px; color: var(--deep-navy);">
+        <p>This visualization represents the average relative improvement in cognitive speed for each auditory 
+            environment compared to each participant's individual baseline. Rather than comparing raw times 
+            across different people, we measured how much faster or slower each student 
+            became relative to their own silent "No Music" trial.</p>
+        
+        <p><strong>How the Productivity Increase was Calculated:</strong></p>
+        <p>To ensure the data reflected true cognitive impact rather than just natural clicking speed, 
+            we followed a three-step Intra-Subject Analysis:</p>
+        
+        <p><strong>1. Individual Baseline Establishment:</strong> Each participant completed a 7x7 Schulte Grid in 
+            silence to establish their personal "100% effort" baseline.</p>
+        
+        <p><strong>2. Relative Performance Ratio:</strong> For every subsequent music trial, we calculated the percentage 
+            change using the formula:
+            <div class="formula-container" style="margin: 25px 0; text-align: center; font-family: 'Inter', sans-serif;">
+                <div style="display: inline-flex; align-items: center; gap: 10px; font-weight: 700; color: var(--purple-main);">
+                    <span>% Improvement = </span>
+                    <div style="display: inline-flex; flex-direction: column; align-items: center; vertical-align: middle;">
+                        <span style="padding: 0 10px; border-bottom: 2px solid;">(Baseline Time - Music Trial Time)</span>
+                        <span style="padding: 0 10px;">Baseline Time</span>
                     </div>
+                    <span>× 100</span>
                 </div>
+            </div>
+        </p>
+        
+        <p><strong>3. Group Aggregation:</strong> We then averaged these individual improvement percentages across all 19 participants to determine the net gain for each genre.</p>
+
+        <p><strong>Key Findings:</strong></p>
+        <p>The results reveal a clear hierarchy of efficiency. While Pop and Country music yielded the lowest
+             gains due to the "Lyric Tax" (cognitive competition between reading 
+             and processing vocals), instrumental environments provided a much stronger boost. 
+             Classical music improved speed by 19%, while EDM reached the peak gain of 26.6%. 
+             These findings suggest that high-BPM, non-vocal audio acts as a "rhythmic anchor" 
+             that sustains mental momentum without overloading the brain's phonological loop.</p>
+    </div>
+</div>
             </div>
         </section>
 
-        <section class="analysis-status">
-            <div class="status-card">
-                <div class="pulse-container">
-                    <div class="pulse-dot"></div>
-                    <span class="status-tag">Live Phase</span>
-                </div>
-                <h3>Analysis in Progress...</h3>
-                <div class="progress-bar-bg"><div class="progress-bar-fill"></div></div>
-                <span class="progress-label">Data Processing: 60% Complete</span>
+        <!-- Next Steps Section -->
+
+        <section id="next-steps">
+            <h1>Next Steps</h1>
+            
+            <div class="method-sub-block">
+                <h3>Extending Our Research</h3>
+                <p>Our study offers an early look at how music genre affects focus among college students, but we recognize there is more work to be done before drawing broad conclusions.</p>
+                
+                <details class="research-expandable">
+                    <summary>View Expansion Strategy</summary>
+                    <div class="expand-content">
+                        <p>First, we want to acknowledge the limitations of our current findings. Our sample consisted of 19 participants, all recruited from the University of California, Irvine. While their responses revealed meaningful patterns, a small, single-campus sample limits how widely we can generalize our results. Future studies would expand recruitment to other college campuses, capturing a more diverse range of listening habits, academic backgrounds, and cultural relationships with music among college students.</p>
+                        
+                        <p>We also want to broaden the types of focus tasks used in testing. Our study relied on the Schulte Table, a visual attention task involving sequential number-finding. Focus, however, looks different depending on what someone is working on. Upcoming research would test participants across a wider range of cognitive tasks—including memorization, creative work, writing, and reading—to better understand how genre interacts with different kinds of mental effort.</p>
+                    </div>
+                </details>
+            </div>
+
+            <div class="method-sub-block" style="margin-top: 30px;">
+                <h3>Creating a Prototypable Solution</h3>
+                <p>Our findings point toward a clear opportunity: a tool that helps students identify and use the music that actually works for them.</p>
+                
+                <details class="research-expandable">
+                    <summary>Meet Flowcus</summary>
+                    <div class="expand-content">
+                        <p>We are calling this concept <strong>Flowcus</strong>. Flowcus is designed around two principles grounded directly in our research:</p>
+                        
+                        <p><strong>1. Evidence-based recommendations:</strong> Rather than offering generic playlist suggestions, Flowcus surfaces music choices informed by what our study found—prioritizing high-tempo, low-lyric audio for focus tasks, and flagging genres that tend to introduce cognitive competition through familiar lyrics.</p>
+
+                        <p><strong>2. Individual-based personalization:</strong> Because our data showed significant variation among participants—some performed best with EDM, others with classical, others with silence—Flowcus conducts short, personal testing sessions with each user. Over time, it builds a focus profile unique to that individual, so recommendations reflect how their brain responds to music, not just what works on average.</p>
+                    </div>
+                </details>
+            </div>
+
+            <div class="method-sub-block" style="margin-top: 30px;">
+                <h3>Research Limitations</h3>
+                <p>While our methodology was rigorous, we recognize specific constraints that impact the generalizability and scope of our current findings.</p>
+                
+                <details class="research-expandable">
+                    <summary>View Technical Constraints</summary>
+                    <div class="expand-content">
+                        <p><strong>Sample Size & Diversity:</strong> Our current data set is based on a relatively small sample size. To increase statistical power and validate our "Lyric Tax" theory across a broader demographic, future iterations must include a significantly larger participant pool.</p>
+                        
+                        <p><strong>Geographic Centralization:</strong> Participants are currently limited to the <strong>University of California, Irvine</strong>. Because academic culture and study habits can vary by institution, extending our experimental studies to other college campuses is essential to ensure our results are representative of the general student population.</p>
+                        <p><strong>Task Specificity:</strong> The Schulte Grid measures visual search and mental speed, but it is only one type of focus. We aim to conduct future studies involving a wider variety of focus-based tasks, such as:</p>
+                        <ul style="margin-top: 10px; padding-left: 20px; color: var(--slate-navy);">
+                            <li><strong>Memorization:</strong> Testing recall speed under different auditory loads.</li>
+                            <li><strong>Creative Work:</strong> Measuring output during divergent thinking tasks.</li>
+                            <li><strong>Writing & Reading:</strong> Assessing the impact of lyrical interference on linguistic processing.</li>
+                        </ul>
+                    </div>
+                </details>
             </div>
         </section>
+
     </main>
 
     <div class="final-cta">
@@ -322,7 +439,7 @@
             options: { ...commonOptions, scales: { y: { title: { display: true, text: 'Completion Time (Seconds)' }, min: 60 }, x: { title: { display: true, text: 'Auditory Environment' } } } }
         });
 
-        // 2. BPM Advantage (Labeled)
+        // 2. BPM Advantage
         new Chart(document.getElementById('tempoChart'), {
             type: 'line',
             data: {
@@ -338,7 +455,7 @@
             options: { ...commonOptions, scales: { y: { title: { display: true, text: '% Improvement vs. Silence' } }, x: { title: { display: true, text: 'Musical Tempo' } } } }
         });
 
-        // 3. Difficulty (Labeled)
+        // 3. Difficulty
         new Chart(document.getElementById('diffChart'), {
             type: 'bar',
             data: {
