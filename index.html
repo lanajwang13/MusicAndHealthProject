@@ -16,6 +16,7 @@
                 <li><a href="#about">Purpose</a></li>
                 <li><a href="#methodology">Methodology</a></li>
                 <li><a href="#preliminary-data">Results</a></li>
+                <li><a href="#flowcus">Flowcus</a></li>
                 <li><a href="#next-steps">Next Steps</a></li>
                 <li><a href="abstract.html">Abstract</a></li>
                 <li><a href="team.html">Team</a></li>
@@ -39,9 +40,9 @@
 
     <section class="study-stats">
         <div class="container stats-flex">
-            <div class="stat-item"><strong>Status</strong><span>Phase II Active</span></div>
-            <div class="stat-item"><strong>Target Population</strong><span>College Students</span></div>
-            <div class="stat-item"><strong>Course</strong><span>IN4MATX148 | PUBHEALTH106</span></div>
+            <div class="stat-item"><strong>Status</strong><span class="stat-badge stat-badge--green"><span class="stat-pulse"></span>Prototyping</span></div>
+            <div class="stat-item"><strong>Target Population</strong><span>🎓 College Students</span></div>
+            <div class="stat-item"><strong>Course</strong><span>IN4MATX148 · PUBHEALTH106</span></div>
         </div>
     </section>
 
@@ -78,16 +79,28 @@
         <section id="participate">
             <h1>Participate</h1>
             <div class="cta-grid">
-                <div class="cta-card">
-                    <h3>1. Baseline Survey</h3>
+                <div class="cta-card" id="cta-survey">
+                    <div class="cta-step-badge">Step 1</div>
+                    <div class="cta-icon">📋</div>
+                    <h3>Baseline Survey</h3>
                     <p>Provide information about your musical background and habits.</p>
-                    <a href="https://forms.gle/nxiiKmn8cCppgc4t5" target="_blank" class="btn secondary">Pre-Study Survey</a>
+                    <a href="https://forms.gle/nxiiKmn8cCppgc4t5" target="_blank" class="btn secondary cta-btn" id="btn-survey">
+                        <span class="btn-text">Pre-Study Survey</span>
+                        <span class="btn-arrow">→</span>
+                    </a>
+                    <div class="cta-meta">~3 min · Anonymous</div>
                 </div>
                 
-                <div class="cta-card highlight">
-                    <h3>2. The Experiment</h3>
+                <div class="cta-card highlight" id="cta-experiment">
+                    <div class="cta-step-badge light">Step 2</div>
+                    <div class="cta-icon">🧪</div>
+                    <h3>The Experiment</h3>
                     <p>Listen to music and complete the Schulte Grid focus task.</p>
-                    <a href="https://lanajwang13.github.io/Inf172/" target="_blank" class="btn primary">Launch Experiment</a>
+                    <a href="https://lanajwang13.github.io/Inf172/" target="_blank" class="btn primary cta-btn" id="btn-experiment">
+                        <span class="btn-text">Launch Experiment</span>
+                        <span class="btn-arrow">→</span>
+                    </a>
+                    <div class="cta-meta light">~15 min</div>
                 </div>
             </div>
         </section>
@@ -334,8 +347,45 @@
             </div>
         </section>
 
+        <section id="flowcus">
+            <h1>Meet Flowcus</h1>
+            <div class="flowcus-wip-badge">
+                <span class="wip-dot"></span>
+                Work in Progress · Prototype Phase
+            </div>
+            <p class="flowcus-intro">Our findings point toward a clear opportunity: a tool that helps students identify and use the music that actually works for <em>them</em>. We are calling this concept <strong>Flowcus</strong> — and while it is still actively being developed, the core design is grounded directly in our research data.</p>
+
+            <div class="flowcus-principles">
+                <div class="flowcus-principle-card">
+                    <div class="fp-icon">📊</div>
+                    <h3>Evidence-Based Recommendations</h3>
+                    <p>Rather than offering generic playlist suggestions, Flowcus surfaces music choices informed by what our study found — prioritizing high-tempo, low-lyric audio for focus tasks, and flagging genres that tend to introduce cognitive competition through familiar lyrics.</p>
+                </div>
+                <div class="flowcus-principle-card">
+                    <div class="fp-icon">🧬</div>
+                    <h3>Individual Personalization</h3>
+                    <p>Because our data showed significant variation among participants — some performed best with EDM, others with Classical, others with Silence — Flowcus conducts short personal testing sessions with each user, building a focus profile unique to that individual.</p>
+                </div>
+            </div>
+
+            <div class="flowcus-prototype-wrapper" style="margin-top: 36px;">
+                <div class="proto-label-row">
+                    <span class="proto-label">🎨 Interactive Prototype</span>
+                    <span class="proto-note">Click through to explore · Best viewed on desktop</span>
+                </div>
+                <div class="proto-frame-wrap">
+                    <iframe
+                        style="border: 1px solid rgba(0,0,0,0.1); display: block; width: 100%; height: 1000px;"
+                        src="https://embed.figma.com/proto/OZo3wnOEruJMKgqzGoro54/Flowcus?node-id=227-1487&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=227%3A1487&show-proto-sidebar=0&embed-host=share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
         <section id="next-steps">
             <h1>Next Steps</h1>
+            <p class="section-intro">Our research and the Flowcus prototype are both ongoing. Below are the directions we are actively pursuing to strengthen our findings and evolve the product.</p>
             
             <div class="method-sub-block">
                 <h3>Extending Our Research</h3>
@@ -347,43 +397,6 @@
                         <p>First, we want to acknowledge the limitations of our current findings. Our sample consisted of 19 participants, all recruited from the University of California, Irvine. While their responses revealed meaningful patterns, a small, single-campus sample limits how widely we can generalize our results. Future studies would expand recruitment to other college campuses, capturing a more diverse range of listening habits, academic backgrounds, and cultural relationships with music among college students.</p>
                         
                         <p>We also want to broaden the types of focus tasks used in testing. Our study relied on the Schulte Table, a visual attention task involving sequential number-finding. Focus, however, looks different depending on what someone is working on. Upcoming research would test participants across a wider range of cognitive tasks—including memorization, creative work, writing, and reading—to better understand how genre interacts with different kinds of mental effort.</p>
-                    </div>
-                </details>
-            </div>
-
-            <div class="method-sub-block" style="margin-top: 30px;">
-                <h3>Creating a Prototypable Solution</h3>
-                <p>Our findings point toward a clear opportunity: a tool that helps students identify and use the music that actually works for them.</p>
-                
-                <details class="research-expandable">
-                    <summary>Meet Flowcus</summary>
-                    <div class="expand-content">
-                        <p>We are calling this concept <strong>Flowcus</strong>. Flowcus is still a work in progress, and is designed around two principles grounded directly in our research:</p>
-                        
-                        <p><strong>1. Evidence-based recommendations:</strong> Rather than offering generic playlist suggestions, Flowcus surfaces music choices informed by what our study found—prioritizing high-tempo, low-lyric audio for focus tasks, and flagging genres that tend to introduce cognitive competition through familiar lyrics.</p>
-
-                        <p><strong>2. Individual-based personalization:</strong> Because our data showed significant variation among participants—some performed best with EDM, others with classical, others with silence—Flowcus conducts short, personal testing sessions with each user. Over time, it builds a focus profile unique to that individual, so recommendations reflect how their brain responds to music, not just what works on average.</p>
-
-                        <div class="flowcus-prototype-wrapper" style="margin-top: 28px;">
-                            <p style="font-size: 0.8rem; font-weight: 700; color: var(--purple-main); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">🎨 Interactive Prototype</p>
-                            <div style="
-                                position: relative;
-                                width: 100%;
-                                border-radius: 16px;
-                                overflow: hidden;
-                                border: 2px solid var(--purple-light);
-                                box-shadow: 0 8px 30px rgba(99, 102, 241, 0.12);
-                                background: #f8fafc;
-                                min-height: 900px;
-                            ">
-                                <iframe
-                                    style="border: none; display: block; width: 100%; height: 1000px;"
-                                    src="https://embed.figma.com/proto/OZo3wnOEruJMKgqzGoro54/Flowcus?node-id=1-3&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3&embed-host=share"
-                                    allowfullscreen>
-                                </iframe>
-                            </div>
-                            <p style="font-size: 0.75rem; color: var(--slate-gray); margin-top: 10px; text-align: center;">Click through the prototype above to explore Flowcus · Best viewed on desktop</p>
-                        </div>
                     </div>
                 </details>
             </div>
@@ -492,6 +505,52 @@
             },
             options: { ...commonOptions, scales: { y: { title: { display: true, text: '% Productivity Increase' } }, x: { title: { display: true, text: 'Auditory Environment' } } } }
         });
+
+        // Participate card hover interactions
+        const cards = document.querySelectorAll('.cta-card');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-8px)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Button arrow animation on hover
+        document.querySelectorAll('.cta-btn').forEach(btn => {
+            btn.addEventListener('mouseenter', () => {
+                btn.querySelector('.btn-arrow').style.transform = 'translateX(4px)';
+            });
+            btn.addEventListener('mouseleave', () => {
+                btn.querySelector('.btn-arrow').style.transform = 'translateX(0)';
+            });
+        });
+    </script>
+
+    <script>
+        // Scroll-based background hue shift
+        function updateBg() {
+            const scrollPct = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+            const t = Math.min(Math.max(scrollPct, 0), 1);
+
+            // White → noticeable lavender (mid) → soft mint (end)
+            let r, g, b;
+            if (t < 0.5) {
+                const s = t / 0.5;
+                r = Math.round(255 - s * 22);   // 255 → 233  (more purple push)
+                g = Math.round(255 - s * 22);   // 255 → 233
+                b = Math.round(255 - s * 4);    // 255 → 251  (blue stays high = lavender)
+            } else {
+                const s = (t - 0.5) / 0.5;
+                r = Math.round(233 + s * 5);    // 233 → 238
+                g = Math.round(233 + s * 14);   // 233 → 247
+                b = Math.round(251 - s * 14);   // 251 → 237  (pull blue down = mint)
+            }
+            document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
+        }
+        window.addEventListener('scroll', updateBg, { passive: true });
+        updateBg();
     </script>
 </body>
 </html>
